@@ -1,10 +1,7 @@
-# Configurating the Django application to import Dash so that it can use it later
+from django.urls import path
+from .views import home, cybersickness_predict_view
 
-from django.apps import AppConfig
-
-class NpassConfig(AppConfig):
-    default_auto_field = "django.db.models.BigAutoField"
-    name = "npass"
-
-    def ready(self):
-        from . import dash_app 
+urlpatterns = [
+    path("", home, name="home"),
+    path("api/predict/", cybersickness_predict_view, name="predict"),
+]

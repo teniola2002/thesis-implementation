@@ -1,0 +1,1 @@
+web: gunicorn npass_site.wsgi:application

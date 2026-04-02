@@ -1,0 +1,7 @@
+django
+gunicorn
+joblib
+numpy
+scikit-learn
+django-plotly-dash
+requests
