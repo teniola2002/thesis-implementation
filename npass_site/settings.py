@@ -16,7 +16,6 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "dpd_static_support",
     # Our app
     "npass",
 ]
@@ -29,7 +28,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "django_plotly_dash.middleware.BaseMiddleware",
+    
 ]
 
 ROOT_URLCONF = "npass_site.urls"
